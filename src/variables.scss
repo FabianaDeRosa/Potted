@@ -1,0 +1,77 @@
+$colors: (
+    primary: #FDF8F1,
+    clay: #985744,
+    forest-green: #203220,
+    beige: #FAECD9,
+    dark: #262626
+);
+
+@font-face {
+    font-family: 'CircularStd';
+    font-style: normal;
+    font-weight: 200;
+    src: url('fonts/CircularStd-Book.ttf'); 
+}
+
+@font-face {
+    font-family: 'CircularStd';
+    font-style: medium;
+    font-weight: 300;
+    src: url('fonts/circular-std-medium-500.ttf'); 
+}
+
+@font-face {
+    font-family: 'CircularStd';
+    font-style: bold;
+    font-weight: 400;
+    src: url('fonts/CircularStd-Bold.ttf'); 
+}
+
+@mixin btn-style {
+    background: none;
+    cursor: pointer;
+    color: map-get($colors, forest-green );
+    border: solid 2px map-get($colors, forest-green );
+    padding: .8rem 2rem;
+    border-radius: 2rem;
+    font-size: 1.1rem;
+    margin-top: 1.3rem;
+}
+
+@mixin card-style {
+    img{
+        height: 35ch;
+    }
+
+    h3{
+        font-weight: 300;
+        margin: 0; 
+    }
+
+    p {
+        font-weight: 200;
+        color: map-get($colors, clay);
+        margin: 1.1rem;
+        margin-top: .8rem;
+        font-size: 1.2rem;
+
+        &::after{
+            content: ",00£";
+        }
+    }
+
+    button {
+        @include btn-style;
+        margin: 0;
+        padding: .6rem 1.7rem;
+
+        &:hover{
+            background-color: map-get($colors, forest-green );
+            color: map-get($colors, primary );
+
+            a {
+                color: map-get($colors, primary);
+            }
+        }
+    }
+}

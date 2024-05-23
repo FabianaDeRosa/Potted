@@ -1,0 +1,13 @@
+@import url("https://necolas.github.io/normalize.css/");
+
+
+body {
+    font-family: 'CircularStd';
+    background-color: map-get( $colors, primary );
+    margin: 0;
+}
+
+#header-wrapper, footer {
+    padding: 1.2rem;  
+}
+

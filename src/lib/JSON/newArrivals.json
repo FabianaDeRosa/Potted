@@ -1,0 +1,22 @@
+[
+  {
+      "img": "assets/new-arrivals/plant1.png",
+      "title": "Erica"
+  },
+  {
+      "img": "assets/new-arrivals/plant2.png",
+      "title": "Pervinca"
+  },
+  {
+      "img": "assets/new-arrivals/plant3.png",
+      "title": "Serena"
+  },
+  {
+      "img":  "assets/new-arrivals/plant4.png",
+      "title": "Veronica"
+  },
+  {
+      "img": "assets/new-arrivals/plant5.png",
+      "title": "Diana"
+  }
+]
